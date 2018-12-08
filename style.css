@@ -4,9 +4,9 @@ body {
 
 ul {
 	list-style-type: none;
-	margin : 0;
+	margin : 0 px;
 	margin-top: 3em;
-	padding: 0.75em;
+	padding: 0 px;
 	overflow: hidden;
 	background-color: #A9AFAF;
 }
@@ -15,7 +15,7 @@ li {
 	float: right;
 }
 
-li a, .dropbtn {
+li a{
 	display: inline-block;
 	color: white;
 	text-align: center;
@@ -23,18 +23,23 @@ li a, .dropbtn {
 	text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-	background-color: white;
+ul :: after{
+	content:"";
+	display: block;
+	clear: both;
 }
 
-li .dropdown {
-	display: inline-block;
+li:hover .dropdown-content {
+    display: inline-block;
+}
+
+li .dropdown-content a:hover{
+	background-color: white;
 }
 
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: red;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -48,9 +53,32 @@ li .dropdown {
 	text-align: left;
 }
 
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.menu-Home:hover ,.menu-Entreprises:hover{
+	border-top: 2px solid #993366;
+	background-color: RGBa(228,77,38,0.15);
 }
+
+.menu-formaction:hover , .menu-Alumni:hover{
+	border-top: 2px solid #00004d;
+	background-color: RGBa(000,112,192,0.15);
+}
+
+.menu-VieEtudiante:hover ,.menu-contact:hover{
+	border-top: 2px solid #664600;
+	background-color: RGBa(241,211,79,0.15);
+}
+
+
+
+.menu-Home .dropdown-content, .menu-Entreprises .dropdown-content{
+	background-color: #f8edf2;
+}
+
+.menu-formaction .dropdown-content , .menu-Alumni .dropdown-content{
+	background-color: #e6e6ff;
+}
+
+.menu-VieEtudiante .dropdown-content{
+	background-color: #fff7e6;
+}
+
