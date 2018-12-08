@@ -2,7 +2,7 @@
 	try{
 		$link = new PDO('mysql:host=localhost;dbname=ptut','root','$iutinfo');
 	}catch(Exception $e){
-		exit();
+		die('Erreur :'. $e->getMessage());
 	}
 	
 	$req = $link->prepare('select * from news order by id_news desc limit 5');

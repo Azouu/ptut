@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	chargerNews();
-	setInterval(chargerNews,5000);
 });
 
 	function chargerNews(){
