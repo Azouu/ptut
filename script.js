@@ -1,1 +1,18 @@
-LOL
+$(document).ready(function(){
+	chargerNews();
+	setInterval(chargerNews,5000);
+});
+
+	function chargerNews(){
+		$.ajax({
+			url : 'news.php',
+			dataType : 'html',
+			success : function(data){
+				$(".article").empty();
+				$(".article").after(data);
+				}
+			
+			
+		})
+		
+	}
