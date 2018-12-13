@@ -54,3 +54,18 @@ li .dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.presse{
+	display:block;
+	width:75%;
+	word-wrap:break-word;
+	border:1px solid black;
+	
+}
+
+.article h1{
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+}
+
+

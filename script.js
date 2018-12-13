@@ -1,5 +1,7 @@
 $(document).ready(function(){
 	chargerNews();
+	setInterval(chargerNews,10000);
+	
 });
 
 	function chargerNews(){
@@ -8,7 +10,7 @@ $(document).ready(function(){
 			dataType : 'html',
 			success : function(data){
 				$(".article").empty();
-				$(".article").after(data);
+				$(".article").append(data);
 				}
 			
 			
