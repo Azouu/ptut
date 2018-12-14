@@ -57,7 +57,7 @@ li .dropdown {
 
 .presse{
 	display:block;
-	width:75%;
+	width:70%;
 	word-wrap:break-word;
 	border:1px solid black;
 	
@@ -66,6 +66,15 @@ li .dropdown {
 .article h1{
 	border-top:1px solid black;
 	border-bottom:1px solid black;
+}
+
+.article article{
+	
+}
+
+.twitter{
+	
+	
 }
 
 
